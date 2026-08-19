@@ -226,11 +226,11 @@ body {
   display: flex;
   align-items: center; /* Vertically centers the buttons and pill inside the 36px outline */
   
-  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â OUTLINE CONTAINER DIMENSIONS */
+  /* ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â OUTLINE CONTAINER DIMENSIONS */
   width: 341px; 
   height: 36px; 
   
-  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â 36px GAP FROM CONTENT ABOVE */
+  /* ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â 36px GAP FROM CONTENT ABOVE */
   margin: 36px auto 0 20px; /* 36px top gap, auto right, 0 bottom, 20px left margin */
   
   background: #ffffff;
@@ -243,7 +243,7 @@ body {
 .segmented .slider-pill {
   position: absolute;
   
-  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â SLIDER PILL DIMENSIONS */
+  /* ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â SLIDER PILL DIMENSIONS */
   width: 113px !important; 
   height: 33px !important;
   
@@ -265,7 +265,7 @@ body {
   align-items: center;
   justify-content: center;
   
-  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂºÃ‚Â ÃƒÂ¯Ã‚Â¸Ã‚Â INDIVIDUAL TOGGLE BUTTON DIMENSIONS */
+  /* ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â INDIVIDUAL TOGGLE BUTTON DIMENSIONS */
   width: 113px; 
   height: 36px; 
   
@@ -635,7 +635,7 @@ h3 {
 .qr-hotspot{
   position: absolute;
 
-  /* ÃƒÂ°Ã…Â¸Ã¢â‚¬ËœÃ¢â‚¬Â¡ move these until it sits on top of the screenshot button */
+  /* ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‹Å“ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ move these until it sits on top of the screenshot button */
   left: 58.5%;
   top: 72%;
   width: 32%;
@@ -810,11 +810,11 @@ h3 {
 #homepage .licence-btn {
   width: calc(100% - 32px);
   max-width: 390px;
-  height: auto; /* keep this ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â never change it */
+  height: auto; /* keep this ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â never change it */
   border-radius: 5px;
   box-shadow: 0 25px 50px rgba(0,0,0,0.2);
   transition: transform 0.1s ease-in-out;
-  transform: translateY(40px); /* move image down ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adjust px until nav disappears */
+  transform: translateY(40px); /* move image down ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â adjust px until nav disappears */
 }
 
 #homepage.licence-btn:active {
@@ -864,7 +864,7 @@ h3 {
   margin-top: 20px;
   transform-origin: center center;
   flex-shrink: 0;
-  /* transition line removed — handled by .nav-icon-wrap .nav-icon now */
+  /* transition line removed â€” handled by .nav-icon-wrap .nav-icon now */
 }
 
 .nav-link span {
@@ -932,7 +932,7 @@ h3 {
 .nav-link[data-page="licence-landing"] .nav-icon {
   width: 23.5px;
   height: 15.5px;
-  margin-top: 15px;   /* add px ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â adjust value to taste */
+  margin-top: 15px;   /* add px ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â adjust value to taste */
 }
 
 .nav-link[data-page="licence-landing"] span {
@@ -2127,7 +2127,7 @@ h3 {
 
 
     * #qr {box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-    #qr body{background:#fff;color:#111}
+    #qr body{background:#FFFFFF;color:#111}
 
     #qr .app{
   overflow-x: hidden;
@@ -2136,8 +2136,8 @@ h3 {
   height: 844px;
   margin: 0 auto;
   max-height: 844px;
-  background: #fff;
-  margin-top: 40px;   /* ÃƒÂ¢Ã¢â‚¬Â Ã‚Â add this line */
+  background: #FFFFFF;
+  margin-top: 40px;   /* ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â Ãƒâ€šÃ‚Â add this line */
 }
 
     /* top bar */
@@ -2147,10 +2147,9 @@ h3 {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-bottom: 1px solid #e5e7eb;
       position: relative;
       padding: 0 16px;
-      background: #fff;
+      background: #FFFFFF;
     }
     #qr .top .title{font-size:16px;font-weight:600}
 
@@ -2181,23 +2180,22 @@ h3 {
     #qr .close:active{background:rgba(0,0,0,0.06)}
 
     /* content */
-    #qr .content{padding:18px 16px 28px}
+    #qr .content{padding: 0px 0px 28px}
 
-    #qr .qr-wrap{
-      display:flex;
-      justify-content:center;
-      margin:8px 0 18px;
-    }
 
-    #qr .qr{
-      width:min(340px, 92%);
-      aspect-ratio:1/1;
-      border:1px solid #e5e7eb;
-      border-radius:14px;
-      overflow:hidden;
-      position:relative;
-      box-shadow:0 2px 6px rgba(0,0,0,0.08);
-    }
+#qr .qr {
+  /* Replace: width: min(340px, 92%); */
+  width: 315px;
+  height: 315px;
+  margin-left: 37px;
+  
+  aspect-ratio: 1/1;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
 
     #qr .qr img {
   width: 100%;
@@ -2440,6 +2438,25 @@ img {
 
 .nav-link span:last-child {
   transition: color 0.35s ease, font-weight 0.35s ease;
+}
+
+/* Force dynamic QR container styling */
+#dynamic-qr-container {
+  width: 315px !important;
+  height: 315px !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin-left: 0px;
+}
+
+/* Force canvas element inside it to match */
+#dynamic-qr-container canvas,
+#dynamic-qr-container img {
+  width: 315px !important;
+  height: 315px !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 @keyframes flicker {
