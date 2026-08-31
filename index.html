@@ -208,9 +208,15 @@ self.addEventListener("activate", event => {
 </div>
     
 
-    <!-- IMAGE SECTION -->
-    <div class="image-section qr-pi wrap">
+ <!-- IMAGE SECTION -->
+<div class="image-section qr-pi wrap" id="holoContainer">
   <img src="IMG_1166.png" alt="Licence QR Section">
+  
+  <!-- 3 Hologram Layers -->
+  <img src="holoimg.png" alt="Hologram 1" class="holo-layer holo-1">
+  <img src="holoimg.png" alt="Hologram 2" class="holo-layer holo-2">
+  <img src="holoimg.png" alt="Hologram 3" class="holo-layer holo-3">
+
   <img src="overlay-image.png" alt="Overlay" class="image-overlay">
   <button class="qr-hotspot" onclick="showPage('qr')">Reveal QR code</button>
 </div>
@@ -1468,6 +1474,62 @@ window.addEventListener('resize', () => {
   const bubble = document.getElementById('navBubble');
   if (activeLink && bubble) placeBubbleInstant(bubble, getBubbleBounds(activeLink));
 });
+
+
+
+
+
+
+
+
+
+const holoElements = document.querySelectorAll('.holo-layer');
+  const container = document.getElementById('holoContainer');
+
+  function updateHoloEffect(intensity) {
+    const opacity = 0.25 + (intensity * 0.7);
+    const brightness = 1 + (intensity * 0.8);
+
+    holoElements.forEach((img) => {
+      img.style.opacity = opacity.toFixed(2);
+      img.style.filter = `brightness(${brightness.toFixed(2)}) contrast(1.2)`;
+    });
+  }
+
+  // Desktop Mouse Movement
+  if (container) {
+    container.addEventListener('mousemove', (e) => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left - (rect.width / 2);
+      const y = e.clientY - rect.top - (rect.height / 2);
+
+      const distance = Math.sqrt(x * x + y * y);
+      const intensity = Math.min(distance / (rect.width / 2), 1);
+
+      updateHoloEffect(intensity);
+    });
+
+    container.addEventListener('mouseleave', () => {
+      updateHoloEffect(0);
+    });
+  }
+
+  // Mobile Gyroscope Movement
+  function handleOrientation(event) {
+    const beta = event.beta || 0;
+    const gamma = event.gamma || 0;
+
+    const betaDiff = Math.abs(beta - 45);
+    const gammaDiff = Math.abs(gamma);
+    const totalTilt = Math.sqrt(betaDiff * betaDiff + gammaDiff * gammaDiff);
+
+    const intensity = Math.min(totalTilt / 40, 1);
+    updateHoloEffect(intensity);
+  }
+
+  if (window.DeviceOrientationEvent) {
+    window.addEventListener('deviceorientation', handleOrientation);
+  }
 
 </script>
 </div>
